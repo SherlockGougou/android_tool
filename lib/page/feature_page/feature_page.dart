@@ -81,6 +81,30 @@ class _FeaturePageState extends BasePage<FeaturePage, FeatureViewModel> {
                               ),
                             ],
                           ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: <Widget>[
+                              buttonView(
+                                IconFont.shell,
+                                "复制Shell命令",
+                                () {
+                                  viewModel.copyShell();
+                                },
+                              ),
+                              Expanded(
+                                flex: 1,
+                                child: Container(),
+                              ),
+                              Expanded(
+                                flex: 1,
+                                child: Container(),
+                              ),
+                              Expanded(
+                                flex: 1,
+                                child: Container(),
+                              ),
+                            ],
+                          )
                         ],
                       ),
                     ),
@@ -355,7 +379,7 @@ class _FeaturePageState extends BasePage<FeaturePage, FeatureViewModel> {
                               buttonView(
                                 IconFont.remoteControl,
                                 "遥控器",
-                                    () {
+                                () {
                                   viewModel.showRemoteControlDialog(context);
                                 },
                               ),

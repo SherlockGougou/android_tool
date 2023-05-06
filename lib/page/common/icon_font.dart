@@ -6,7 +6,8 @@ class IconFont {
   static const IconData install = IconData(0xe693, fontFamily: "IconFont");
   static const IconData input = IconData(0xe816, fontFamily: "IconFont");
   static const IconData screenshot = IconData(0xe931, fontFamily: "IconFont");
-  static const IconData currentActivity = IconData(0xe607, fontFamily: "IconFont");
+  static const IconData currentActivity =
+      IconData(0xe607, fontFamily: "IconFont");
   static const IconData uninstall = IconData(0xe740, fontFamily: "IconFont");
   static const IconData start = IconData(0xe6af, fontFamily: "IconFont");
   static const IconData stop = IconData(0xe875, fontFamily: "IconFont");
@@ -18,14 +19,17 @@ class IconFont {
   static const IconData authorize = IconData(0xe66c, fontFamily: "IconFont");
   static const IconData apkPath = IconData(0xe76d, fontFamily: "IconFont");
   static const IconData save = IconData(0xe60e, fontFamily: "IconFont");
-  static const IconData screenRecording = IconData(0xe695, fontFamily: "IconFont");
-  static const IconData stopRecording = IconData(0xe71d, fontFamily: "IconFont");
+  static const IconData screenRecording =
+      IconData(0xe695, fontFamily: "IconFont");
+  static const IconData stopRecording =
+      IconData(0xe71d, fontFamily: "IconFont");
   static const IconData android = IconData(0xe881, fontFamily: "IconFont");
   static const IconData version = IconData(0xe617, fontFamily: "IconFont");
   static const IconData ip = IconData(0xe632, fontFamily: "IconFont");
   static const IconData macAddress = IconData(0xe65d, fontFamily: "IconFont");
   static const IconData restart = IconData(0xe6b2, fontFamily: "IconFont");
-  static const IconData systemProperty = IconData(0xe61e, fontFamily: "IconFont");
+  static const IconData systemProperty =
+      IconData(0xe61e, fontFamily: "IconFont");
   static const IconData home = IconData(0xe68e, fontFamily: "IconFont");
   static const IconData back = IconData(0xe616, fontFamily: "IconFont");
   static const IconData menu = IconData(0xe605, fontFamily: "IconFont");
@@ -39,5 +43,7 @@ class IconFont {
   static const IconData swipeLeft = IconData(0xe603, fontFamily: "IconFont");
   static const IconData swipeRight = IconData(0xe60a, fontFamily: "IconFont");
   static const IconData click = IconData(0xe6ca, fontFamily: "IconFont");
-  static const IconData remoteControl = IconData(0xe697, fontFamily: "IconFont");
+  static const IconData remoteControl =
+      IconData(0xe697, fontFamily: "IconFont");
+  static const IconData shell = IconData(0xe61e, fontFamily: "IconFont");
 }

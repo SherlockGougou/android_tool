@@ -47,7 +47,7 @@ mixin PackageHelpMixin implements BaseViewModel {
       'pm',
       'list',
       'packages',
-      isShowSysApp ? '' : '-3',
+      isShowSysApp ? '' : '',
     ]);
     if (installedApp == null) {
       resetPackage();

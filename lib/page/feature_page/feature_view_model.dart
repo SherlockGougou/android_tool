@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:android_tool/page/common/app.dart';
 import 'package:android_tool/page/common/base_view_model.dart';
 import 'package:android_tool/page/common/key_code.dart';
@@ -9,7 +11,6 @@ import 'package:desktop_drop/desktop_drop.dart';
 import 'package:file_selector/file_selector.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:process_run/shell_run.dart';
 
 class FeatureViewModel extends BaseViewModel with PackageHelpMixin {
@@ -397,6 +398,16 @@ class FeatureViewModel extends BaseViewModel with PackageHelpMixin {
       var activity = outLines.first.replaceAll("mCurrentFocus=", "");
       showResultDialog(content: activity);
     }
+  }
+
+  /// 复制shell命令
+  Future<void> copyShell() async {
+    String shellCmd = "adb -s " + deviceId;
+    Clipboard.setData(ClipboardData(text: shellCmd));
+    // 打开终端
+    Process.start("open", ["-a", "Terminal"]).then((Process process) {
+      process.stdin.writeln(shellCmd);
+    });
   }
 
   ///查看设备AndroidId
